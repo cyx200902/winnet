@@ -1,0 +1,53 @@
+#!/usr/bin/make -f
+
+l10npkgs_firstversion_ok := 4:16.04.3-4~
+include /usr/share/pkg-kde-tools/qt-kde-team/2/l10n-packages.mk
+
+export JOBS = $(shell cat /proc/cpuinfo| grep "processor"| wc -l)
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+EXTRAFLAGS :=
+
+ifeq ($(DEB_BUILD_ARCH_OS),kfreebsd)
+	EXTRAFLAGS := -DNO_JOGSHUTTLE=YES
+endif
+
+%:
+	dh $@
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -rf $(CURDIR)/build
+
+override_dh_auto_configure:
+	mkdir build && cd build && cmake ..  -DCMAKE_INSTALL_PREFIX=/opt/apps/org.ktouch/files
+
+override_dh_auto_build:
+	make -C build -j$(JOBS)
+
+override_dh_auto_install:
+	cd build && make install DESTDIR=$(CURDIR)/debian/org.ktouch
+	mkdir -p $(CURDIR)/debian/org.ktouch/opt/apps/org.ktouch/entries/
+	mv $(CURDIR)/debian/org.ktouch/opt/apps/org.ktouch/files/share/* $(CURDIR)/debian/org.ktouch/opt/apps/org.ktouch/entries/
+	mv $(CURDIR)/debian/org.ktouch/opt/apps/org.ktouch/entries/ktouch/ $(CURDIR)/debian/org.ktouch/opt/apps/org.ktouch/files/
+	mv $(CURDIR)/debian/org.ktouch/opt/apps/org.ktouch/entries/locale/ $(CURDIR)/debian/org.ktouch/opt/apps/org.ktouch/files/
+	cp $(CURDIR)/debian/org.info $(CURDIR)/debian/org.ktouch/opt/apps/org.ktouch/'info'
+	
+	
+	
+override_dh_dwz:
+
+override_dh_compress:
+	dh_compress -X.docbook
+
+override_dh_gencontrol: l10npkgs_firstversion_ok
+	dh_gencontrol
+
+override_dh_shlibdeps:
+
+override_dh_installinfo:
+
+override_dh_installchangelogs:
+
+override_dh_installdocs:
+

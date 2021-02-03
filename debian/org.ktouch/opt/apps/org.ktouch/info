@@ -1,0 +1,17 @@
+{
+	 "appid":"org.ktouch",
+	 "name": "ktouch",
+	 "version": "18.04.1",
+	 "arch": ["amd64","arm64","mips64el"],
+	 "permissions": {
+	     "autostart": true,
+	     "notification": true,
+	     "trayicon": true,
+	     "clipboard": true,
+	     "account": true,
+	     "bluetooth": true,
+	     "camera": true,
+	     "audio_record": true,
+	     "installed_apps": true
+           }
+ }

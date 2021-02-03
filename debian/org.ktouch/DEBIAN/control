@@ -1,0 +1,19 @@
+Package: org.ktouch
+Version: 4:18.04.1-1
+Architecture: amd64
+Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 9112
+Depends: ktouch-data (>= 4:18.04.1-1)
+Section: kde
+Priority: optional
+Homepage: http://edu.kde.org/
+Description: touch typing tutor for KDE
+ KTouch is an aid for learning how to type with speed and accuracy.  It
+ provides a sample text to type and indicates which fingers should be used for
+ each key.
+ .
+ A collection of lessons are included for a wide range of different languages
+ and keyboard layouts, and typing statistics are used to dynamically adjust the
+ level of difficulty.
+ .
+ This package is part of the KDE education module.

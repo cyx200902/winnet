@@ -1,0 +1,164 @@
+<?xml version="1.0" ?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Catalan  "INCLUDE">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+<title
+>Manual d'usuari del &ktouch;</title>
+<author
+><firstname
+>Ben</firstname
+><surname
+>Burton</surname
+> <contrib
+>Pàgina man de KTouch.</contrib
+> <email
+>bab@debian.org</email
+></author>
+<date
+>2 de novembre de 2016</date>
+<releaseinfo
+>&ktouch; 2.3.0 (Aplicacions 16.12)</releaseinfo>
+<productname
+>Aplicacions KDE</productname>
+</refentryinfo>
+
+<refmeta>
+<refentrytitle
+><command
+>ktouch</command
+></refentrytitle>
+<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname
+><command
+>ktouch</command
+></refname>
+<refpurpose
+>un tutor de mecanografia creat per la comunitat KDE</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+><command
+>ktouch</command
+> <group choice="opt"
+><option
+>--resource-editor</option
+></group
+> <group choice="opt"
+><option
+>-I --import-path</option
+> <replaceable
+>camí</replaceable
+></group
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Descripció</title>
+<para
+>&ktouch; és un programa per aprendre a mecanografiar. Us ajuda a escriure sobre un teclat de manera ràpida i correcta. Cada dit té el seu lloc sobre el teclat amb la tecla associada corresponent a prémer.</para
+> 
+<para
+>&ktouch; us ajuda a aprendre a mecanografiar proveint-vos el text sobre el qual entrenar, i s'ajusta a diferents nivells depenent de la vostra destresa. També pot mostrar quina és la següent tecla a mostrar, i el dit correcte a usar.</para>
+<para
+>Aquesta aplicació forma part del mòdul educatiu oficial del &kde;.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Opcions del KTouch</title>
+<variablelist>
+<varlistentry>
+<term
+><option
+>--resource-editor</option
+></term>
+<listitem
+><para
+>Llança l'editor de curs i disposició del teclat.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>-I --import-path</option
+> <replaceable
+>camí</replaceable
+></term>
+<listitem
+><para
+>Anteposa el camí a la llista de camins d'importació del QML.</para
+></listitem>
+</varlistentry>
+</variablelist>
+
+</refsect1>
+
+<refsect1>
+<title
+>Vegeu també</title>
+<simplelist>
+<member
+>Hi ha disponible documentació d'usuari més detallada des de <ulink url="help:/ktouch"
+>help:/ktouch</ulink
+> (introduïu aquest <acronym
+>URL</acronym
+> al &konqueror; o executeu <userinput
+><command
+>khelpcenter</command
+><parameter
+>help:/ktouch</parameter
+></userinput
+>).</member>
+<member
+>kf5options(7)</member
+> <!-- only for application with a GUI-->
+<member
+>qt5options(7)</member
+> <!-- only for application with a GUI-->
+<member
+>També hi ha més informació disponible al <ulink url="http://edukdeorg/ktouch/"
+>lloc web del &kde; Education</ulink
+>.</member>
+</simplelist>
+
+</refsect1>
+
+<refsect1>
+<title
+>Autors</title>
+<para
+>KTouch fou escrit per en <personname
+><firstname
+>Haavard</firstname
+><surname
+>Froeiland</surname
+></personname
+> <email
+>haavard@users.sourceforge.net</email
+> i <personname
+><firstname
+>Andreas</firstname
+><surname
+>Nicolai</surname
+></personname
+> <email
+>Andreas.Nicolai@gmx.net</email
+>. Aquesta pàgina de manual es basa en una preparada per a Debian per en <personname
+><firstname
+>Ben</firstname
+><surname
+>Burton</surname
+></personname
+>. </para>
+</refsect1>
+
+</refentry>

@@ -1,0 +1,12 @@
+Package: org.ktouch-dbgsym
+Source: org.ktouch
+Version: 4:18.04.1-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 7014
+Depends: org.ktouch (= 4:18.04.1-1)
+Section: debug
+Priority: optional
+Description: debug symbols for org.ktouch
+Build-Ids: c838569e046d02b25688375bfd8bbb4604cccc72
