@@ -28,6 +28,7 @@ Build-Depends: cmake (>= 3.0~),
                qtbase5-dev (>= 5.5~),
                qtdeclarative5-dev (>= 5.5~),
                qtscript5-dev (>= 5.5~),
+               libqt5xmlpatterns5
 Standards-Version: 4.1.4
 Homepage: http://edu.kde.org/
 Vcs-Browser: https://salsa.debian.org/qt-kde-team/kde/ktouch
