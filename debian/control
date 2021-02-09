@@ -36,7 +36,7 @@ Vcs-Git: https://salsa.debian.org/qt-kde-team/kde/ktouch.git
 
 Package: org.ktouch
 Architecture: any
-Depends: ktouch-data (>= ${source:Version}), ${misc:Depends}, ${shlibs:Depends}
+Depends: ktouch-data (>= ${source:Version}), ${misc:Depends}, ${shlibs:Depends},libqt5xmlpatterns5
 Description: touch typing tutor for KDE
  KTouch is an aid for learning how to type with speed and accuracy.  It
  provides a sample text to type and indicates which fingers should be used for
